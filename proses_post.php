@@ -23,7 +23,7 @@ if (isset($_POST['simpan'])) {
     // Memindahkan file gambar yang diunggah ke direktori tujuan
     if (move_uploaded_file($_FILES["image"]["tmp_name"],$imagePath)) {
         // Jika unggahan berhasil, masukkan
-        // Data postingan ke dalam database 
+        // Data postingan ke dalam database
         $query = "INSERT INTO posts (post_title, content,
         created_at, categori_id, user_id, image_path) VALUES
         ('$postTitle', '$content', NOW(). $categoryId, $userId, '$imagePath')";
