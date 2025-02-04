@@ -29,14 +29,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             $_SESSION['notification'] = [
                 'type' => 'danger',
-                'message' => 'Username atau Password salah'
+                'message' => 'A Username atau Password salah'
             ];
         }
     } else {
 
         $_SESSION['notification'] = [
             'type' => 'danger',
-            'message' => 'Username atau Password salah'
+            'message' => 'B Username atau Password salah'
         ];
     }
     
