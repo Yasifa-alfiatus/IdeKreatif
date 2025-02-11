@@ -1,5 +1,3 @@
-dashboard
-
 
 <?php
 include (".includes/header.php");
